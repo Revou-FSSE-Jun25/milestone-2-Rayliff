@@ -1,0 +1,183 @@
+/*ini settingan awal*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* untuk custom font */
+h1,h2,h3,h4,h5,p{
+  font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/*ini untuk ngescroll nya smooth dan tidak kaku*/
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px; 
+}
+
+/*ini untuk atur body seperti ukuran, warna, jenis font, background tampilan */
+body {
+  color: white;
+  background-color: black;
+  background-image: linear-gradient(to bottom right, #faffdf, #fef9b8);
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+/*untuk atur navbar nya*/
+.navbar {
+  background-color: black;
+  background-image: linear-gradient(to bottom right, #f2e313, #fff453);
+  position: fixed;
+  display: inline-flex;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 999;
+}
+
+span{
+    color: orange;
+}
+
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  color: #000000;
+  background-color: #fff5b0;
+}
+
+/* ini atur main. padding top biar ga ketutup navbar. diplay buat ngatur posisi content */
+main {
+  padding-top: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*ini buat atur content per section nya.*/
+/*-------Home Section-------*/
+#home {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../image/home.png);
+}
+
+#home h2{
+    font-size: 2.9rem;
+    margin: 2rem;
+    text-shadow: 0 7px rgb(255, 98, 0);
+}
+
+#home p{
+    font-size: 1.5rem;
+    text-shadow: 0 4px rgb(255, 98, 0);
+}
+
+.hero-text{
+  position: relative;
+  z-index: 1px;
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+}
+
+
+/*-------Game Section-------*/
+
+#games{
+    height: auto;
+    color: #000000;
+    text-align: center;
+}
+
+#games h3{
+  padding: 0.5rem 0;
+  font-size: 2rem;
+}
+
+
+.game-list{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 1rem;
+  
+}
+
+.game-card{
+  display: block;
+  overflow: hidden;
+  border-radius: 15px;
+  width: 390px;
+  text-align: justify;
+  background-color: #f2e313;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 98, 0, 0.6); /*ngasih shadow dengan warna dibelakang*/
+}
+
+.game-card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.game-card .p-text{
+  color: rgb(0, 0, 0);
+  padding: 0rem 1rem 1rem 0rem;
+  margin: 1rem;
+}
+
+.game-card a{
+  text-decoration: none;
+}
+
+
+.game-card:hover {
+  transform: translateY(-10px); /* agar saat diklik, naik sedikit */
+  box-shadow: 0 12px 24px rgba(255, 98, 0, 0.6); /* shadownya lebih besar sedikit */
+}
+
+
+footer{
+  background-color: #f2e313;
+  color: #000000;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 0.5rem 1rem 1rem 1rem;
+  position: relative;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
