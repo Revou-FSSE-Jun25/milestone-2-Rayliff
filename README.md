@@ -12,7 +12,6 @@ This simple gaming company website, RevFun, is designed as my personal portfolio
 ## Features
 
 - Simple and responsive navigation bar
-- Pages:
 - **Home**: Home page with hero text and background image
 - **Games**: There are currently three games: guess number, rock paper scissors, and clicker.
 

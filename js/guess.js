@@ -46,7 +46,7 @@ function checkGuess() {
     feedback.textContent = "Terlalu kecil!";
   }
 
-  if (attempts === 0 && guess === targetNumber) {
+  if (attempts === 0) {
     feedback.textContent = `😢 Habis percobaan! Angka yang benar: ${targetNumber}`;
     endGame();
   }
