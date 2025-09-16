@@ -143,3 +143,8 @@ main {
 .btn:hover {
   background: #a88100;
 }
+
+.win { color: green; font-weight: bold; }
+.lose { color: red; font-weight: bold; }
+.draw { color: gray; font-weight: bold; }
+.hidden { display: none; }
